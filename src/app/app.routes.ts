@@ -7,6 +7,7 @@ import { ContactComponent } from './contact/contact.component';
 import { AttivitaComponent } from './attivita/attivita.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { TaglieriComponent } from './products/taglieri/taglieri.component';
+import { RingraziamentiComponent } from './ringraziamenti/rigraziamenti.component';
 
 export const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -17,6 +18,7 @@ export const routes: Routes = [
   { path: 'attivita', component: AttivitaComponent },
   { path: 'projects', component: ProjectsComponent },
   { path: 'products/taglieri', component: TaglieriComponent },
+  { path: 'ringraziamenti', component: RingraziamentiComponent },
 ];
 
 
