@@ -1,0 +1,28 @@
+.tagliere-img {
+  height: 180px;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto;
+}
+
+.taglierino-img {
+  width: 90%;          /* aumenta la larghezza */
+  height: 200px;       /* aumenta l’altezza */
+  object-fit: contain;
+  display: block;
+  margin: 0 auto;
+}
+
+
+.card-title {
+  font-size: 1rem;
+}
+
+.card-text {
+  font-size: 0.9rem;
+}
+
+.card {
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}

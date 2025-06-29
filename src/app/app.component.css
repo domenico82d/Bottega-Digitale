@@ -1,0 +1,57 @@
+ul.navbar-nav {
+    margin: auto;
+    width: 100%;
+
+}
+
+a.nav-link {
+    color: white;
+    font-family: cursive;
+}
+
+li.nav-item {
+    width: 19%;
+   /* border: 1px solid white;*/
+    font-size: 20px;
+    border-radius: 15px;
+    margin-right: 14px;
+    text-align: center;  
+}
+
+.navbar-custom {
+    background-color: rgba(0, 0, 0, 0.6); /* nero con trasparenza */
+    backdrop-filter: blur(10px); /* sfocatura sullo sfondo */
+    -webkit-backdrop-filter: blur(10px); /* compatibilità Safari */
+    transition: background-color 0.3s ease;
+    z-index: 1030;
+  }
+  /* Colore personalizzato alle voci di menu */
+.menu-link {
+    color: #f1f1f1 !important;
+    font-weight: 500;
+    transition: all 0.3s ease;
+  }
+  
+  .menu-link:hover {
+    color: #ffc107 !important; /* giallo dorato */
+    transform: translateX(3px);
+  }
+  
+  /* Icone animate */
+  .icon-nav {
+    margin-right: 8px;
+    transition: transform 0.3s ease, color 0.3s ease;
+    font-size: 1.1rem;
+  }
+  
+  .menu-link:hover .icon-nav {
+    transform: scale(1.2) rotate(5deg);
+    color: #ffc107;
+  }
+  
+  /* Evidenzia voce attiva */
+  .nav-link.active {
+    color: #0d6efd !important;
+    font-weight: bold;
+  }
+  

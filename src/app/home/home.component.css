@@ -1,0 +1,52 @@
+.home-background {
+    background-image: url('/assets/images/torri.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+  }
+  
+ .titolo-h1 {
+    font-size: 4.5rem;
+    color: #082fe1;
+    font-family: unset;
+    font-weight: 700;
+}
+
+.sottotitolo-p{
+    font-size: 3.5rem;
+    color: #129469;
+    font-family: unset;
+    font-weight: 700;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.bologna-h2{
+    font-size: 4.5rem;
+    color: red;
+    font-family: unset;
+    font-weight: 700;
+
+}
+
+.home-page-background {
+    background: white;
+    height: 700px;
+    border-radius: 30px;
+    font-size: 22px;
+    padding: 40px;
+}
+.sfondo-trasparente {
+    background-color: rgba(255, 255, 255, 0.6); /* bianco con trasparenza */
+    color: #000; /* testo scuro per contrasto */
+    border-radius: 16px;
+    padding: 40px;
+    max-width: 95%;
+    margin: 50px auto;
+  }
+  

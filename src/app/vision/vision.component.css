@@ -1,0 +1,22 @@
+blockquote {
+    font-style: italic;
+    color: #555;
+    border-left: 4px solid #ccc;
+    padding-left: 15px;
+  }
+
+.container.my-5 {
+    background: white;
+    border-radius: 38px;
+    padding: 40px;
+}
+
+.vision-p{
+    font-family: cursive;
+    font-size: 20p;
+    text-align: justify;
+}
+
+h3,h4{
+    margin-top:20px;
+}
