@@ -1,6 +1,7 @@
 ul.navbar-nav {
     margin: auto;
     width: 100%;
+    
 
 }
 
@@ -110,4 +111,35 @@ li.nav-item {
 .dropdown-menu {
   padding-top: 0;
   padding-bottom: 0;
+}
+
+.footer-link {
+  color: #f8f9fa;
+  text-decoration: none;
+}
+
+.footer-link:hover {
+  color: #ffc107;
+  text-decoration: underline;
+}
+
+footer p,
+footer li {
+  font-size: 0.9rem;
+}
+
+footer h5 {
+  color: #ffc107;
+  font-weight: 600;
+}
+.logo-zoom {
+  transition: transform 0.3s ease;
+}
+
+.logo-zoom:hover {
+  transform: scale(1.4);
+}
+.navbar-brand {
+  margin-right: 0;
+  padding-right: 0;
 }

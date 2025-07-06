@@ -1,6 +1,11 @@
 <nav class="navbar navbar-expand-lg navbar-dark fixed-top navbar-custom">
   <div class="container-fluid">
-    <!-- <a class="navbar-brand" routerLink="/">La Bottega Digitale</a> -->
+ <a class="navbar-brand d-flex align-items-center" routerLink="">
+  <img src="assets/images/logo.png" alt="Logo Terra Bucchiglieri" height="60" 
+       class="me-1 rounded bg-white p-1 logo-zoom">
+</a>
+
+
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
       aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -37,7 +42,7 @@
             <li>
               <a class="dropdown-item" [routerLink]="'/projects'" routerLinkActive="active"
                 [routerLinkActiveOptions]="{ exact: true }">
-                Project
+                Progetti
               </a>
 
             </li>
@@ -77,7 +82,102 @@
   </div>
 </nav>
 
-<router-outlet></router-outlet>
+<main>
+  <router-outlet></router-outlet>
+</main>
+
+
+<footer class="bg-dark text-white py-5 mt-5">
+  <div class="container">
+    <div class="row">
+
+      <!-- COLONNA SINISTRA -->
+      <div class="col-md-4 mb-4 mb-md-0">
+        <h5 class="text-warning">Menu</h5>
+        <div class="d-flex flex-wrap mb-3">
+          <a routerLink="/" class="footer-link me-3 mb-2">Home</a>
+          <a routerLink="/about" class="footer-link me-3 mb-2">Chi Siamo</a>
+          <a routerLink="/attivita" class="footer-link me-3 mb-2">Attività</a>
+          <a routerLink="/projects" class="footer-link me-3 mb-2">Progetti</a>
+          <a routerLink="/contact" class="footer-link mb-2">Contatti</a>
+        </div>
+
+        <p class="small">
+          Terra Bucchiglieri è un laboratorio dove arte, ambiente e memoria
+          si intrecciano per rigenerare comunità e territori.
+        </p>
+
+        <h6 class="text-warning mt-3">I nostri valori:</h6>
+        <ul class="list-inline small mb-0">
+          <li class="list-inline-item me-3">🌿 Sostenibilità</li>
+          <li class="list-inline-item me-3">📚 Tradizione</li>
+          <li class="list-inline-item me-3">🤝 Comunità</li>
+          <li class="list-inline-item">💡 Innovazione</li>
+        </ul>
+      </div>
+
+      <!-- COLONNA CENTRALE -->
+      <div class="col-md-4 text-center mb-4 mb-md-0 d-flex flex-column justify-content-center align-items-center">
+        <div class="bg-white rounded p-3 d-inline-block">
+          <img src="assets/images/logo.png" alt="Logo Terra Bucchiglieri" style="max-height: 160px; width: auto;">
+        </div>
+        <h5 class="text-white mt-3">Terra Bucchiglieri</h5>
+      </div>
+
+      <!-- COLONNA DESTRA -->
+      <div class="col-md-4">
+        <h5 class="text-warning">Chi Siamo</h5>
+        <p class="small">
+          Terra Bucchiglieri è un’associazione culturale nata a Bocchigliero,
+          nel cuore della Sila Greca, per custodire, valorizzare e reinventare
+          le radici di un territorio antico e profondo. Promuoviamo arte,
+          ambiente, artigianato e partecipazione, per trasformare la
+          fragilità dei piccoli paesi in forza generativa.
+        </p>
+
+        <h5 class="text-warning mt-4">Cosa Facciamo</h5>
+        <ul class="list-unstyled small">
+          <li>🌱 Economia Circolare: ridiamo vita alle materie prime locali.</li>
+          <li>🛠️ Artigianato e tecniche tradizionali.</li>
+          <li>🎨 Laboratori e percorsi educativi.</li>
+        </ul>
+      </div>
+
+    </div>
+
+    <hr class="bg-secondary my-4">
+
+    <!-- CONTATTI IN BASSO -->
+    <div class="row justify-content-between text-center text-md-start">
+      <div class="col-md-6">
+        <p class="mb-1 small"><i class="bi bi-geo-alt-fill"></i> Via Cadriano, 11, Bologna (BO)</p>
+        <p class="mb-1 small">
+          <i class="bi bi-envelope-fill"></i>
+          <a href="mailto:terrabucchiglieri&#64;gmail.com" class="footer-link">
+            terrabucchiglieri&#64;gmail.com
+          </a>
+        </p>
+        <p class="mb-1 small"><i class="bi bi-telephone-fill"></i> +39 351 925 2785</p>
+      </div>
+      <div class="col-md-6 text-md-end">
+        <p class="small mb-1">
+           <a href="https://www.facebook.com/profile.php?id=61560206763141" target="_blank" class="footer-link  me-3">
+            <i class="bi bi-facebook"></i> Facebook
+          </a>
+          <a href="https://www.instagram.com/terrabucchiglieri" target="_blank" class="footer-link">
+            <i class="bi bi-instagram"></i> Instagram
+          </a>
+        </p>
+        <p class="small mb-0">&copy; 2025 Terra Bucchiglieri. Tutti i diritti riservati.</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+
+
+
 
 <!-- ✅ FORM HIDDEN PER NETLIFY -->
 <form name="contact" netlify netlify-honeypot="bot-field" hidden>
