@@ -1,18 +1,8 @@
-
-
-
 <nav class="navbar navbar-expand-lg navbar-dark fixed-top navbar-custom">
   <div class="container-fluid">
     <!-- <a class="navbar-brand" routerLink="/">La Bottega Digitale</a> -->
-    <button
-      class="navbar-toggler"
-      type="button"
-      data-bs-toggle="collapse"
-      data-bs-target="#navbarNav"
-      aria-controls="navbarNav"
-      aria-expanded="false"
-      aria-label="Toggle navigation"
-    >
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
 
@@ -28,7 +18,7 @@
             <i class="bi bi-person-fill icon-nav"></i> Chi Siamo
           </a>
         </li>
-           <li class="nav-item">
+        <li class="nav-item">
           <a class="nav-link menu-link" [routerLink]="'/attivita'" routerLinkActive="active">
             <i class="bi bi-tools icon-nav"></i> Attività
           </a>
@@ -38,19 +28,51 @@
             <i class="bi bi-shop-window icon-nav"></i> Vetrina
           </a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link menu-link" [routerLink]="'/projects'" routerLinkActive="active">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle menu-link" href="#" id="progettiDropdown" role="button"
+            data-bs-toggle="dropdown" aria-expanded="false">
             <i class="bi bi-stars icon-nav"></i> Progetti
           </a>
+          <ul class="dropdown-menu" aria-labelledby="progettiDropdown">
+            <li>
+              <a class="dropdown-item" [routerLink]="'/projects'" routerLinkActive="active"
+                [routerLinkActiveOptions]="{ exact: true }">
+                Project
+              </a>
+
+            </li>
+            <li>
+            <li>
+              <a class="dropdown-item" [routerLink]="'/projects/bronzi-di-carta'" routerLinkActive="active">
+                I Bronzi di Carta
+              </a>
+            </li>
+            <li>
+              <a class="dropdown-item" [routerLink]="'/projects/il-cielo-e-sempre-piu-blu'" routerLinkActive="active">
+                Il cielo è sempre più blu
+              </a>
+            </li>
+            <li>
+              <a class="dropdown-item" [routerLink]="'/projects/incisioni-narranti'" routerLinkActive="active">
+                Incisioni Narranti
+              </a>
+            </li>
+            <li>
+              <a class="dropdown-item" [routerLink]="'/projects/magna-sila'" routerLinkActive="active">
+                Magna Sila
+              </a>
+            </li>
+          </ul>
         </li>
+
         <li class="nav-item">
           <a class="nav-link menu-link" [routerLink]="'/contact'" routerLinkActive="active">
             <i class="bi bi-envelope-fill icon-nav"></i> Contatti
           </a>
         </li>
       </ul>
-      
-      
+
+
     </div>
   </div>
 </nav>

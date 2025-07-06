@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
+import { VisionComponent } from '../vision/vision.component';
 
 @Component({
   selector: 'app-about',
-  imports: [],
+  standalone: true,
+  imports: [VisionComponent],  // ✅ Import qui
   templateUrl: './about.component.html',
-  styleUrl: './about.component.css'
+  styleUrls: ['./about.component.css']
 })
-export class AboutComponent {
-
-}
+export class AboutComponent { }
