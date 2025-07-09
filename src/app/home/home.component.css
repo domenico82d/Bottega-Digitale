@@ -42,11 +42,14 @@
     padding: 40px;
 }
 .sfondo-trasparente {
-    background-color: rgba(255, 255, 255, 0.6); /* bianco con trasparenza */
+    background-color: rgba(255, 255, 255, 0.4); /* bianco con trasparenza */
     color: #000; /* testo scuro per contrasto */
     border-radius: 16px;
     padding: 40px;
     max-width: 95%;
     margin: 50px auto;
   }
-  
+  .sfondo-trasparente h1,
+.sfondo-trasparente p {
+  margin-top: -20px;
+}
