@@ -1,9 +1,5 @@
 .home-background {
-    background-image: url('/assets/images/paese.jpg');
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
+
     min-height: 100vh;
     padding-top: 60px;
     padding-bottom: 60px;
