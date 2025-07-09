@@ -36,7 +36,6 @@
 
 .home-page-background {
     background: white;
-    height: 700px;
     border-radius: 30px;
     font-size: 22px;
     padding: 40px;
@@ -53,3 +52,56 @@
 .sfondo-trasparente p {
   margin-top: -20px;
 }
+
+
+
+@media (max-width: 992px) {
+  .titolo-h1 {
+    font-size: 3rem;
+  }
+
+  .sottotitolo-p {
+    font-size: 2.2rem;
+  }
+}
+
+
+@media (max-width: 887px) {
+p.sottotitolo-p {
+    font-size: 22px !important;
+    margin-top: 10px !important;
+}
+}
+
+@media (max-width: 576px) {
+  .titolo-h1 {
+    font-size: 2.2rem;
+  }
+
+  .sottotitolo-p {
+    font-size: 1.5rem;
+  }
+
+  .sfondo-trasparente {
+    padding-top: 10px;
+    padding-bottom: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 20px auto;
+  }
+
+  .home-page-background {
+    padding: 20px;
+    font-size: 18px;
+  }
+
+  .home-background {
+    background-attachment: scroll;
+  }
+
+  p {
+    max-width: 100%;
+  }
+
+}
+

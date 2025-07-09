@@ -13,3 +13,8 @@ form input, form textarea {
     margin-top: 100px !important;
   }
   
+
+  @media (max-width: 767px) {
+
+    .contatti-form{margin-top: 50px;}
+  }

@@ -147,3 +147,107 @@ footer h5 {
 .logo-wrapper {
 background-color: rgb(222 232 248);
 }
+
+
+
+@media (max-width: 768px) {
+
+  /* Rimuovi larghezze fisse */
+  li.nav-item {
+    width: auto;
+    margin-right: 8px;
+    font-size: 16px;
+  }
+
+  /* Logo più piccolo */
+  .navbar-brand img {
+    max-height: 40px;
+  }
+
+  /* Navbar background su mobile */
+  .navbar-custom {
+    background-color: rgba(0,0,0,0.85);
+    backdrop-filter: blur(10px);
+  }
+
+  /* Nav-link spacing */
+  a.nav-link {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: left;
+  }
+
+  /* Dropdown mobile */
+  .navbar .dropdown-menu {
+    width: 100%;
+    position: static;
+    float: none;
+    background-color: rgba(0,0,0,0.9);
+    border: none;
+    box-shadow: none;
+    margin: 0;
+  }
+
+  .navbar .dropdown-menu .dropdown-item {
+    padding: 12px 20px;
+    color: #fff;
+    font-size: 16px;
+  }
+
+  /* Scroll su offcanvas se presente */
+  .offcanvas-body {
+    overflow-y: auto;
+    max-height: calc(100vh - 100px);
+  }
+}
+
+
+@media (max-width: 576px) {
+  /* Centra tutte le colonne */
+  footer .col-12 {
+    text-align: center;
+  }
+
+  /* Logo più piccolo su mobile */
+  footer img {
+    max-height: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+
+  /* Uniforma font e allineamento */
+  footer p,
+  footer li,
+  footer a,
+  footer h5,
+  footer h6 {
+    font-size: 0.9rem;
+    text-align: center;
+  }
+
+  footer {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  footer .mb-4 {
+    margin-bottom: 1rem !important;
+  }
+
+  footer .mt-3,
+  footer .mt-4 {
+    margin-top: 1rem !important;
+  }
+
+  footer .text-md-end {
+    text-align: center !important;
+    margin-top: 1.5rem;
+  }
+
+  /* Spaziatura link orizzontali */
+  footer .footer-link {
+    margin: 0 0.5rem 0.5rem 0;
+  }
+}
+

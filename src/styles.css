@@ -38,3 +38,11 @@ body {
 main {
   flex: 1;
 }
+
+
+@media (max-width: 576px) {
+  .container.my-5
+ {
+    width: 90%;
+}
+}
