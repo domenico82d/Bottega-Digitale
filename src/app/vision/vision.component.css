@@ -20,3 +20,30 @@ blockquote {
 h3,h4{
     margin-top:20px;
 }
+
+
+.nav-pills .nav-link {
+  white-space: nowrap;
+  margin-right: 0.5rem;
+}
+
+.nav-pills {
+  scrollbar-width: thin; /* Firefox */
+}
+
+.nav-pills::-webkit-scrollbar {
+  height: 6px;
+}
+
+.nav-pills::-webkit-scrollbar-thumb {
+  background-color: #999;
+  border-radius: 4px;
+}
+
+@media (max-width: 767px) {
+
+.container.my-5 {
+  padding: 0px;
+}
+    
+}
