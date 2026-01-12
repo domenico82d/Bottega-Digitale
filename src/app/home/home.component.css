@@ -50,6 +50,18 @@
     padding-top: 14px;
 }
 
+@media (max-width: 576px) { 
+  .hero{margin-top:-30px;}
+}
+
+@media (min-width: 577px) and (max-width: 994px) {
+ .titolo-h1{font-size: xx-large;} 
+}
+
+
+
+
+
 @media (max-width: 1122px) {
   .titolo-h1 {
     /*font-size: 1.5rem;*/
