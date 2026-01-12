@@ -15,7 +15,7 @@ li.nav-item {
    /* border: 1px solid white;*/
     font-size: 20px;
     border-radius: 15px;
-    margin-right: 14px;
+ 
     text-align: center;  
 }
 
@@ -132,21 +132,20 @@ footer h5 {
   color: #ffc107;
   font-weight: 600;
 }
+
 .logo-zoom {
-  transition: transform 0.3s ease;
+  transform: scale(1.4);   /* zoom fisso */
+  transition: none;        /* opzionale */
 }
 
-.logo-zoom:hover {
-  transform: scale(1.4);
-}
 .navbar-brand {
   margin-right: 0;
   padding-right: 0;
 }
 
-.logo-wrapper {
+/*.logo-wrapper {
 background-color: rgb(222 232 248);
-}
+}*/
 
 
 
@@ -155,7 +154,7 @@ background-color: rgb(222 232 248);
   /* Rimuovi larghezze fisse */
   li.nav-item {
     width: auto;
-    margin-right: 8px;
+   
     font-size: 16px;
   }
 
@@ -251,3 +250,12 @@ background-color: rgb(222 232 248);
   }
 }
 
+.navbar-logo{
+  height: 60px;
+  width: auto;
+  display: block;
+}
+
+@media (max-width:768px){
+  .navbar-logo{ height: 42px; }
+}
