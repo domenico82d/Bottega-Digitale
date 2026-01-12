@@ -9,14 +9,14 @@
  .titolo-h1 {
     font-size: 4.5rem;
     color: #082fe1;
-   font-family: cursive;
+   font-family: 'Cormorant Garamond', serif;;
     font-weight: 700;
 }
 
 .sottotitolo-p{
     font-size: 3.5rem;
     color: #129469;
-   font-family: cursive;
+    font-family: 'Cormorant Garamond', serif;;
     font-weight: 700;
     margin-top: 11px;
     margin-bottom: 30px;

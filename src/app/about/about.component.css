@@ -2,7 +2,7 @@ p.about-p  {
     font-size: 23px;
     text-align: justify;
     width: 80%;
-    font-family: cursive;
+    font-family: font-family: 'Cormorant Garamond', serif;;
     margin-top: 90px;
 }
 
@@ -21,7 +21,7 @@ img.img-fluid.rounded {
 
 h1.text-center.mb-4 {
     font-size: 50px;
-    font-family: cursive;
+    font-family: font-family: 'Cormorant Garamond', serif;;
     font-weight: 700;
 }
 
