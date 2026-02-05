@@ -133,6 +133,15 @@ footer h5 {
   font-weight: 600;
 }
 
+.footer-main-row {
+  justify-content: space-between;
+}
+
+.footer-bottom-row {
+  align-items: center;
+  justify-content: space-between;
+}
+
 .logo-zoom {
   transform: scale(1.4);   /* zoom fisso */
   transition: none;        /* opzionale */
