@@ -21,12 +21,13 @@ export class ContactComponent {
     const data = new URLSearchParams();
     data.set('form-name', 'contact');
     data.set('name', form.value.name ?? '');
+    data.set('surname', form.value.surname ?? '');
     data.set('email', form.value.email ?? '');
     data.set('message', form.value.message ?? '');
     data.set('bot-field', form.value['bot-field'] ?? '');
 
     try {
-      const res = await fetch('/', {
+    const res = await fetch(window.location.href, {
         method: 'POST',
         headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
         body: data.toString()
