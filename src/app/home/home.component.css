@@ -8,7 +8,7 @@
   
  .titolo-h1 {
     font-size: 4.5rem;
-    color: #082fe1;
+    color: #363c44;
    font-family: 'Cormorant Garamond', serif;;
     font-weight: 700;
 }
@@ -36,18 +36,12 @@
     font-size: 22px;
     padding: 40px;
 }
-.sfondo-trasparente {
- 
-  }
-  .sfondo-trasparente h1,
-.sfondo-trasparente p {
- 
-}
 
 .hero {
     background: rgb(255 255 255 / 30%);
     border-radius: 16px;
     padding-top: 14px;
+  
 }
 
 @media (max-width: 576px) { 
@@ -204,3 +198,5 @@ p.sottotitolo-p {
     padding: 10px 12px;
   }
 }
+
+@media (min-width: 1269px) {.hero{width: 72%;margin: 0 auto;}}
