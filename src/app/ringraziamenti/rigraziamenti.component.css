@@ -1,0 +1,66 @@
+.thanks-page {
+  padding: 120px 0;
+  background:
+    radial-gradient(900px 500px at 5% -10%, rgba(194,154,58,0.18), transparent 60%),
+    linear-gradient(180deg, #eef0f5 0%, #f6f1e7 45%, #fcfcfd 100%);
+  min-height: 70vh;
+}
+
+.thanks-card {
+  max-width: 600px;
+  margin: 0 auto;
+  background: #ffffff;
+  padding: 50px 40px;
+  border-radius: 28px;
+  box-shadow: 0 20px 40px rgba(24,26,32,0.12);
+}
+
+.thanks-icon {
+  font-size: 3rem;
+  color: #28a745;
+  margin-bottom: 20px;
+}
+
+.thanks-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 2.4rem;
+  margin-bottom: 16px;
+}
+
+.thanks-text {
+  font-family: 'Montserrat', sans-serif;
+  color: #555;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+.thanks-actions {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.thanks-btn-primary {
+  background: #2b3037;
+  color: white;
+  border-radius: 20px;
+  padding: 10px 20px;
+  font-weight: 600;
+}
+
+.thanks-btn-primary:hover {
+  background: #1f2329;
+  color: white;
+}
+
+.thanks-btn-secondary {
+  background: #f1f1f1;
+  border-radius: 20px;
+  padding: 10px 20px;
+  font-weight: 600;
+}
+
+.thanks-btn-secondary:hover {
+  background: #e2e2e2;
+}
