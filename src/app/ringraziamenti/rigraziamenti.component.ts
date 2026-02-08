@@ -1,10 +1,14 @@
 import { Component } from '@angular/core';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-ringraziamenti',
-  imports: [],
+  standalone: true,
+  imports: [RouterLink],
   templateUrl: './rigraziamenti.component.html',
-  styleUrl: './rigraziamenti.component.css'
+  styleUrls: ['./rigraziamenti.component.css'],
+   
+
 })
 export class RingraziamentiComponent {
 
