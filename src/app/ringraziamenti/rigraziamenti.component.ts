@@ -3,8 +3,8 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-ringraziamenti',
   imports: [],
-  templateUrl: './ringraziamenti.component.html',
-  styleUrl: './ringraziamenti.component.css'
+  templateUrl: './rigraziamenti.component.html',
+  styleUrl: './rigraziamenti.component.css'
 })
 export class RingraziamentiComponent {
 
