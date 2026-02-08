@@ -15,7 +15,7 @@ import { IlCieloESemprePiuBluComponent } from './projects/il-cielo-e-sempre-piu-
 import { CorradoAlvaroComponent } from './corrado-alvaro/corrado-alvaro.component';
 
 export const routes: Routes = [
-  { path: '', component: HomeComponent },
+  { path: '', component: HomeComponent, pathMatch: 'full' },
   { path: 'about', component: AboutComponent },
   { path: 'vision', component: VisionComponent },
   { path: 'products', component: ProductsComponent },
