@@ -36,7 +36,7 @@ export class ContactComponent {
       if (!res.ok) throw new Error('Submit failed');
 
       form.resetForm();
-      this.router.navigateByUrl('/ringraziamenti');
+      this.router.navigateByUrl('/rigraziamenti');
     } catch (e) {
       alert('Invio non riuscito. Riprova tra poco.');
     } finally {
