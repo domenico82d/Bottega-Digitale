@@ -12,6 +12,7 @@ import { BronziDiCartaComponent } from './projects/bronzi-di-carta/bronzi-di-car
 import { IncisioniNarrantiComponent } from './projects/incisioni-narranti/incisioni-narranti.component';
 import { MagnaSilaComponent } from './projects/magna-sila/magna-sila.component';
 import { IlCieloESemprePiuBluComponent } from './projects/il-cielo-e-sempre-piu-blu/il-cielo-e-sempre-piu-blu.component';
+import { CorradoAlvaroComponent } from './corrado-alvaro/corrado-alvaro.component';
 
 export const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -20,13 +21,9 @@ export const routes: Routes = [
   { path: 'products', component: ProductsComponent },
   { path: 'contact', component: ContactComponent },
   { path: 'attivita', component: AttivitaComponent },
-  { path: 'projects', component: ProjectsComponent },
-  { path: 'products/taglieri', component: TaglieriComponent },
+  { path: 'corrado-alvaro', component: CorradoAlvaroComponent },
   { path: 'ringraziamenti', component: RingraziamentiComponent },
-  { path: 'projects/bronzi-di-carta', component: BronziDiCartaComponent },
-  { path: 'projects/il-cielo-e-sempre-piu-blu', component: IlCieloESemprePiuBluComponent },
-  { path: 'projects/incisioni-narranti', component: IncisioniNarrantiComponent },
-  { path: 'projects/magna-sila', component: MagnaSilaComponent }
+
 ];
 
 
