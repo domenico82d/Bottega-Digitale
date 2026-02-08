@@ -1,65 +1,164 @@
-<div class="container my-5" style="margin-top: 80px;">
-  <h1 class="text-center mb-5 titolo-azzurro">Contatti</h1>
-
-  <div class="row mb-5" style="margin-top: 80px;">
-    <div class="col-md-6">
-      <h4>📍 Dove ci trovi</h4>
-      <p>
-        L'associazione Corrado Alvaro'si trova a Bocchigliero, <br/> pittoresco paese situato nella regione Calabria, Italia.
-      </p>
-      <p>
-        <strong>Via Roma, 11</strong><br>
-        87060 Bocchigliero – Italia
-      </p>
-
-      <h4 class="mt-4">📞 Contatti</h4>
-      <ul class="list-unstyled">
-        <li><strong>Email:</strong>
-          <a href="mailto:alvarobocchigliero&#64;gmail.com">
-            alvarobocchigliero&#64;gmail.com
-          </a>
-        </li>
-        <li><strong>Telefono:</strong> +39 351 925 2785</li>
-      </ul>
-
-      <h4 class="mt-4">🌐 Social</h4>
-      <ul class="list-unstyled">
-        <li>
-          <i class="bi bi-facebook me-1"></i> Facebook:
-          <a href="#" target="_blank">
-            Associazione Corrado Alvaro
-          </a>
-        </li>
-
-        <li><i class="bi bi-instagram me-1"></i> Instagram:
-          <a href="#" target="_blank">
-            &#64;associazionecorradoalvaro
-          </a>
-        </li>
-      </ul>
+<section class="contact-page">
+  <!-- HERO / TITOLO -->
+  <header class="contact-hero">
+    <div class="container">
+      <div class="contact-hero-inner">
+        <p class="contact-eyebrow">
+          <i class="bi bi-envelope-paper-heart"></i>
+          Scrivici o vieni a trovarci
+        </p>
+        <h1 class="contact-title">Contatti</h1>
+        <p class="contact-subtitle">
+          Per informazioni, collaborazioni o proposte culturali, siamo felici di ascoltarti.
+        </p>
+      </div>
     </div>
+  </header>
 
-    <div class="col-md-6 contatti-form">
-      <h4>📬 Scrivici un messaggio</h4>
-      <form name="contact" method="POST" netlify action="/ringraziamenti">
-        <!-- Campo nascosto obbligatorio per Netlify -->
-        <input type="hidden" name="form-name" value="contact" />
+  <!-- CONTENUTO -->
+  <div class="container contact-shell">
+    <div class="row g-4">
+      <!-- COLONNA SINISTRA -->
+      <div class="col-12 col-lg-6">
+        <div class="contact-card">
+          <h3 class="contact-card-title">
+            <i class="bi bi-geo-alt-fill"></i> Dove ci trovi
+          </h3>
 
-        <div class="mb-3">
-          <label for="name" class="form-label">Nome</label>
-          <input type="text" class="form-control" id="name" name="name" placeholder="Il tuo nome" required>
+          <p class="contact-text">
+            L’associazione Corrado Alvaro si trova a Bocchigliero, pittoresco paese della Calabria.
+          </p>
+
+          <div class="contact-block">
+            <div class="contact-icon">
+              <i class="bi bi-pin-map-fill"></i>
+            </div>
+            <div class="contact-block-body">
+              <div class="contact-label">Indirizzo</div>
+              <div class="contact-value">
+                Via Roma, 11<br />
+                87060 Bocchigliero – Italia
+              </div>
+            </div>
+          </div>
+
+          <hr class="contact-sep" />
+
+          <h3 class="contact-card-title">
+            <i class="bi bi-telephone-fill"></i> Contatti diretti
+          </h3>
+
+          <div class="contact-block">
+            <div class="contact-icon">
+              <i class="bi bi-envelope-fill"></i>
+            </div>
+            <div class="contact-block-body">
+              <div class="contact-label">Email</div>
+            <a class="contact-link" href="mailto:alvarobocchigliero&#64;gmail.com">
+         alvarobocchigliero&#64;gmail.com
+        </a>
+
+            </div>
+          </div>
+
+          <div class="contact-block">
+            <div class="contact-icon">
+              <i class="bi bi-phone-fill"></i>
+            </div>
+            <div class="contact-block-body">
+              <div class="contact-label">Telefono</div>
+              <a class="contact-link" href="tel:+393519252785">+39 351 925 2785</a>
+            </div>
+          </div>
+
+          <hr class="contact-sep" />
+
+          <h3 class="contact-card-title">
+            <i class="bi bi-globe2"></i> Social
+          </h3>
+
+          <div class="contact-block">
+            <div class="contact-icon">
+              <i class="bi bi-facebook"></i>
+            </div>
+            <div class="contact-block-body">
+              <div class="contact-label">Facebook</div>
+              <a class="contact-link" href="#" target="_blank" rel="noopener">
+                Associazione Corrado Alvaro
+              </a>
+            </div>
+          </div>
+
+          <div class="contact-block">
+            <div class="contact-icon">
+              <i class="bi bi-instagram"></i>
+            </div>
+            <div class="contact-block-body">
+              <div class="contact-label">Instagram</div>
+              <a class="contact-link" href="#" target="_blank" rel="noopener">
+                &#64;associazionecorradoalvaro
+              </a>
+            </div>
+          </div>
         </div>
-        <div class="mb-3">
-          <label for="email" class="form-label">Email</label>
-          <input type="email" class="form-control" id="email" name="email" placeholder="tua@email.it" required>
+      </div>
+
+      <!-- COLONNA DESTRA: FORM -->
+      <div class="col-12 col-lg-6">
+        <div class="contact-card contact-card--form">
+          <h3 class="contact-card-title">
+            <i class="bi bi-pencil-square"></i> Scrivici un messaggio
+          </h3>
+
+          <form name="contact" method="POST" netlify action="/ringraziamenti">
+            <input type="hidden" name="form-name" value="contact" />
+
+            <div class="mb-3">
+              <label for="name" class="form-label">Nome</label>
+              <input
+                type="text"
+                class="form-control contact-input"
+                id="name"
+                name="name"
+                placeholder="Il tuo nome"
+                required
+              />
+            </div>
+
+            <div class="mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input
+                type="email"
+                class="form-control contact-input"
+                id="email"
+                name="email"
+                placeholder="tua@email.it"
+                required
+              />
+            </div>
+
+            <div class="mb-3">
+              <label for="message" class="form-label">Messaggio</label>
+              <textarea
+                class="form-control contact-input"
+                id="message"
+                name="message"
+                rows="5"
+                placeholder="Scrivi qui il tuo messaggio..."
+                required
+              ></textarea>
+            </div>
+
+            <button type="submit" class="btn contact-btn">
+              <i class="bi bi-send-fill me-2"></i> Invia
+            </button>
+
+            <p class="contact-privacy">
+              Inviando il messaggio accetti che ti ricontattiamo via email.
+            </p>
+          </form>
         </div>
-        <div class="mb-3">
-          <label for="message" class="form-label">Messaggio</label>
-          <textarea class="form-control" id="message" name="message" rows="4"
-            placeholder="Scrivi qui il tuo messaggio..." required></textarea>
-        </div>
-        <button type="submit" class="btn btn-primary">Invia</button>
-      </form>
+      </div>
     </div>
   </div>
-</div>
+</section>
