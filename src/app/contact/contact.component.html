@@ -54,9 +54,9 @@
             </div>
             <div class="contact-block-body">
               <div class="contact-label">Email</div>
-            <a class="contact-link" href="mailto:alvarobocchigliero&#64;gmail.com">
-         alvarobocchigliero&#64;gmail.com
-        </a>
+              <a class="contact-link" href="mailto:alvarobocchigliero&#64;gmail.com">
+                alvarobocchigliero&#64;gmail.com
+              </a>
 
             </div>
           </div>
@@ -110,53 +110,37 @@
             <i class="bi bi-pencil-square"></i> Scrivici un messaggio
           </h3>
 
-          <form name="contact" method="POST" netlify action="/ringraziamenti">
+          <form name="contact" netlify netlify-honeypot="bot-field" (ngSubmit)="onSubmit(contactForm)"
+            #contactForm="ngForm">
             <input type="hidden" name="form-name" value="contact" />
 
-            <div class="mb-3">
-              <label for="name" class="form-label">Nome</label>
-              <input
-                type="text"
-                class="form-control contact-input"
-                id="name"
-                name="name"
-                placeholder="Il tuo nome"
-                required
-              />
-            </div>
-
-            <div class="mb-3">
-              <label for="email" class="form-label">Email</label>
-              <input
-                type="email"
-                class="form-control contact-input"
-                id="email"
-                name="email"
-                placeholder="tua@email.it"
-                required
-              />
-            </div>
-
-            <div class="mb-3">
-              <label for="message" class="form-label">Messaggio</label>
-              <textarea
-                class="form-control contact-input"
-                id="message"
-                name="message"
-                rows="5"
-                placeholder="Scrivi qui il tuo messaggio..."
-                required
-              ></textarea>
-            </div>
-
-            <button type="submit" class="btn contact-btn">
-              <i class="bi bi-send-fill me-2"></i> Invia
-            </button>
-
-            <p class="contact-privacy">
-              Inviando il messaggio accetti che ti ricontattiamo via email.
+            <p hidden>
+              <label>Don’t fill this out: <input name="bot-field" ngModel /></label>
             </p>
+
+            <div class="mb-3">
+              <label class="form-label">Nome</label>
+              <input class="form-control" name="name" ngModel required />
+            </div>
+
+              <div class="mb-3">
+              <label class="form-label">Cognome</label>
+              <input class="form-control" name="surname" ngModel required />
+            </div>
+
+            <div class="mb-3">
+              <label class="form-label">Email</label>
+              <input class="form-control" name="email" ngModel required type="email" />
+            </div>
+
+            <div class="mb-3">
+              <label class="form-label">Messaggio</label>
+              <textarea class="form-control" name="message" ngModel required rows="4"></textarea>
+            </div>
+
+            <button class="btn btn-primary" type="submit">Invia</button>
           </form>
+
         </div>
       </div>
     </div>
