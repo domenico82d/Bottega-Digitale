@@ -1,5 +1,5 @@
 body {
-    background-image: url('/assets/images/paese.jpg');
+    background-image: url('/assets/images/slider/orizzontale/1.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -15,7 +15,7 @@ body {
   background: white;
   border-radius: 38px;
   padding: 40px;
-  margin-top: 150px !important;
+  margin-top: 150px !important; 
 }
 .titolo-azzurro {
   background-color: rgb(199 218 248);
@@ -45,6 +45,17 @@ main {
  {
     width: 90%;
 }
+}
+
+@media (min-width: 375px) and (max-width: 576px) {
+   .container.my-5{ margin-top: 150px !important;}
+
+}
+
+
+@media (min-width: 317px) and (max-width: 374px) {
+   .container.my-5.home-page-background{ margin-top: 185px !important;}
+
 }
 
 
@@ -86,3 +97,4 @@ body > * {
   position: relative;
   z-index: 1;
 }
+footer.bg-dark.text-white.py-5.mt-5{ margin-top: 0px !important;}

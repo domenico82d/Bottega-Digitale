@@ -14,31 +14,33 @@
       <ul class="navbar-nav">
 
         <li class="nav-item">
-          <a class="nav-link menu-link" [routerLink]="'/'" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
+          <a class="nav-link menu-link" [routerLink]="'/'" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" data-bs-dismiss="collapse">
             <i class="bi bi-house-door-fill icon-nav"></i> Home
           </a>
         </li>
 
         <!-- CHI SIAMO -->
         <li class="nav-item">
-          <a class="nav-link menu-link" [routerLink]="'/about'" routerLinkActive="active">
+          <a class="nav-link menu-link" [routerLink]="'/about'" routerLinkActive="active" data-bs-dismiss="collapse">
             <i class="bi bi-people-fill icon-nav"></i> Chi siamo
+          </a>
+        </li>
+
+          <!-- TERRITORIO / PRODOTTI (sezione opzionale, rinomina come preferisci) -->
+        <li class="nav-item">
+          <a class="nav-link menu-link" [routerLink]="'/territorio'" routerLinkActive="active" data-bs-dismiss="collapse">
+            <i class="bi bi-shop-window icon-nav"></i> Territorio
           </a>
         </li>
 
         <!-- CORRADO ALVARO -->
         <li class="nav-item">
-          <a class="nav-link menu-link" [routerLink]="'/corrado-alvaro'" routerLinkActive="active">
+          <a class="nav-link menu-link" [routerLink]="'/corrado-alvaro'" routerLinkActive="active" data-bs-dismiss="collapse">
             <i class="bi bi-book-half icon-nav"></i> Corrado Alvaro
           </a>
         </li>
 
-        <!-- TERRITORIO / PRODOTTI (sezione opzionale, rinomina come preferisci) -->
-        <li class="nav-item">
-          <a class="nav-link menu-link" [routerLink]="'/#'" routerLinkActive="active">
-            <i class="bi bi-shop-window icon-nav"></i> Territorio
-          </a>
-        </li>
+      
 
         <!-- Attività -->
         <li class="nav-item dropdown">
@@ -51,14 +53,16 @@
   <li>
     <a class="dropdown-item"
        [routerLink]="'/associazione/missione'"
-       routerLinkActive="active">
+       routerLinkActive="active"
+       data-bs-dismiss="collapse">
       Missione e Obiettivi
     </a>
   </li>
   <li>
     <a class="dropdown-item"
        [routerLink]="'/associazione/bocchigliero'"
-       routerLinkActive="active">
+       routerLinkActive="active"
+       data-bs-dismiss="collapse">
       Bocchigliero
     </a>
   </li>
@@ -66,7 +70,8 @@
   <li>
     <a class="dropdown-item"
        [routerLink]="'/associazione/eventi'"
-       routerLinkActive="active">
+       routerLinkActive="active"
+       data-bs-dismiss="collapse">
       Eventi e Iniziative
     </a>
   </li>
@@ -75,7 +80,8 @@
   <li>
     <a class="dropdown-item"
        [routerLink]="'/associazione/galleria'"
-       routerLinkActive="active">
+       routerLinkActive="active"
+       data-bs-dismiss="collapse">
       Galleria
     </a>
   </li>
@@ -89,14 +95,15 @@
           <a class="nav-link menu-link"
              href="assets/documenti/statuto.pdf"
              target="_blank"
-             rel="noopener">
+             rel="noopener"
+             data-bs-dismiss="collapse">
             <i class="bi bi-file-earmark-pdf-fill icon-nav"></i> Statuto
           </a>
         </li>
 
         <!-- CONTATTI -->
         <li class="nav-item">
-          <a class="nav-link menu-link" [routerLink]="'/contact'" routerLinkActive="active">
+          <a class="nav-link menu-link" [routerLink]="'/contact'" routerLinkActive="active" data-bs-dismiss="collapse">
             <i class="bi bi-envelope-fill icon-nav"></i> Contatti
           </a>
         </li>

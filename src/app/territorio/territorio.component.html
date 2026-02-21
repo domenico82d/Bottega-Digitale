@@ -1,0 +1,180 @@
+<section class="territorio-page">
+
+  <div class="container-fluid px-0">
+
+  <!-- ✅ SLIDER (solo orizzontali) -->
+  <div id="territorioCarousel" class="carousel slide territorio-carousel mb-5" data-bs-ride="carousel" data-bs-pause="false">
+    <div class="carousel-indicators">
+      <button *ngFor="let img of horizontalImages; let i = index"
+              type="button"
+              data-bs-target="#territorioCarousel"
+              [attr.data-bs-slide-to]="i"
+              [class.active]="i === 0"
+              [attr.aria-current]="i === 0 ? 'true' : null"
+              [attr.aria-label]="'Slide ' + (i+1)">
+      </button>
+    </div>
+
+    <div class="carousel-inner">
+      <div class="carousel-item" *ngFor="let img of horizontalImages; let i = index" [class.active]="i === 0">
+        <img [src]="img.src" class="d-block w-100 territorio-carousel__img" [alt]="img.alt">
+        <div class="carousel-caption d-none d-md-block territorio-carousel__caption" *ngIf="img.caption">
+          <h5 class="mb-0">{{ img.caption }}</h5>
+        </div>
+      </div>
+    </div>
+
+    <button class="carousel-control-prev" type="button" data-bs-target="#territorioCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Precedente</span>
+    </button>
+
+    <button class="carousel-control-next" type="button" data-bs-target="#territorioCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Successiva</span>
+    </button>
+  </div>
+
+
+  <div class="row justify-content-center my-5">
+ <div class="col-lg-9 territorio-story">
+
+  <h3 class="mb-4 text-center">Un borgo sospeso tra storia e silenzio</h3>
+
+  <p>
+    Adagiato sulle pendici della Sila Greca, Bocchigliero emerge come un
+    profilo di pietra tra cielo e montagne, sospeso tra memoria e orizzonte.
+    Le sue case addossate l’una all’altra e i vicoli che si intrecciano
+    come fili antichi raccontano secoli di storia, tradizioni e resilienza.
+    Qui il paesaggio non è soltanto cornice, ma parte viva dell’identità collettiva.
+  </p>
+
+  <p>
+    Le origini del paese affondano in epoche lontane, quando piccoli
+    insediamenti sorsero tra boschi e alture per offrire protezione e
+    sostentamento a comunità contadine e pastorali. Nel tempo,
+    Bocchigliero ha custodito una cultura fatta di lavoro,
+    silenzio e dignità, tramandata di generazione in generazione
+    come un patrimonio invisibile ma profondo.
+  </p>
+
+  <p>
+    Il centro storico conserva ancora oggi l’impronta di quel passato:
+    le viuzze strette, i tetti in coppi, le facciate in pietra segnate
+    dal vento e dal sole. Le campane della chiesa madre hanno scandito
+    per secoli i ritmi della vita quotidiana, accompagnando nascite,
+    partenze e ritorni. Ogni scorcio racchiude una storia,
+    ogni pietra restituisce un frammento di memoria.
+  </p>
+
+  <p>
+    Nel Novecento, come molti borghi dell’entroterra calabrese,
+    Bocchigliero ha conosciuto l’esperienza dell’emigrazione.
+    Molti sono partiti in cerca di futuro, portando con sé
+    il ricordo delle proprie radici. Eppure, la distanza non ha spezzato
+    il legame: ha trasformato la nostalgia in memoria condivisa,
+    mantenendo vivo un filo invisibile tra chi è rimasto e chi è partito.
+  </p>
+
+  <p>
+    Oggi Bocchigliero continua a essere un luogo identitario,
+    dove passato e presente dialogano in equilibrio.
+    Raccontarlo significa riconoscere la forza di una comunità
+    che, pur attraversando trasformazioni profonde,
+    non ha mai smesso di credere nel valore della cultura,
+    del territorio e della propria storia.
+    Un borgo che non è soltanto un luogo geografico,
+    ma uno spazio di appartenenza.
+  </p>
+
+</div>
+</div>
+
+<!-- ✅ VIDEO SEZIONE -->
+
+  <div class="video-section">
+    <div class="video-section__header">
+      <div class="video-section__accent"></div>
+      <h2 class="video-section__title">Vista drone di Bocchigliero</h2>
+    </div>
+    
+    <div class="video-wrapper">
+      <iframe 
+        src="https://www.youtube.com/embed/NbFBtkMJUbE?si=J6jPBZQkxTidtMp2" 
+        title="Bocchigliero vista dal drone" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+        referrerpolicy="strict-origin-when-cross-origin" 
+        allowfullscreen>
+      </iframe>
+    </div>
+  </div>
+
+
+<!-- ✅ GALLERY MISTA (tutte le immagini) -->
+<div class="gallery-section">
+  <div class="gallery-header">
+    <div class="gallery-header__accent"></div>
+    <h2 class="gallery-header__title">Scorci del Territorio</h2>
+  </div>
+
+  <div class="territorio-gallery">
+    <button
+      type="button"
+      class="territorio-tile"
+      *ngFor="let img of allImages; let idx = index"
+      (click)="openLightbox(idx)"
+      [class.is-vertical]="img.orientation === 'v'"
+      [attr.aria-label]="'Apri immagine: ' + img.alt">
+
+      <img [src]="img.src" [alt]="img.alt" loading="lazy" class="territorio-tile__img">
+
+      <div class="territorio-tile__overlay">
+        <span class="territorio-tile__text">{{ img.alt }}</span>
+      </div>
+    </button>
+  </div>
+</div>
+
+</div>
+
+</section>
+
+<!-- ✅ LIGHTBOX CUSTOM (fuori dalla section) -->
+<div *ngIf="isModalOpen" 
+     class="lightbox-backdrop" 
+     (click)="onBackdropClick($event)"
+     (keydown.escape)="closeLightbox()"
+     (keydown.arrowLeft)="prevImage()"
+     (keydown.arrowRight)="nextImage()"
+     tabindex="0">
+  
+  <div class="lightbox-container">
+    <button class="lightbox-close" (click)="closeLightbox()" aria-label="Chiudi">
+      <i class="bi bi-x-lg"></i>
+    </button>
+
+    <h5 class="lightbox-title">{{ selectedImage?.alt }}</h5>
+
+    <div class="lightbox-content">
+      <img *ngIf="selectedImage"
+           [src]="selectedImage.src"
+           [alt]="selectedImage.alt"
+           class="lightbox-image">
+    </div>
+
+    <div class="lightbox-controls">
+      <button class="lightbox-btn" (click)="prevImage()" aria-label="Immagine precedente">
+        <i class="bi bi-arrow-left"></i>
+        <span class="ms-2">Precedente</span>
+      </button>
+      
+      <span class="lightbox-counter">{{ selectedIndex + 1 }} / {{ allImages.length }}</span>
+      
+      <button class="lightbox-btn" (click)="nextImage()" aria-label="Immagine successiva">
+        <span class="me-2">Successiva</span>
+        <i class="bi bi-arrow-right"></i>
+      </button>
+    </div>
+  </div>
+</div>
