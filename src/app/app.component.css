@@ -126,6 +126,7 @@ li.nav-item {
 footer p,
 footer li {
   font-size: 0.9rem;
+  color: white !important; 
 }
 
 footer h5 {
